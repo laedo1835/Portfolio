@@ -1,75 +1,172 @@
-<!--<!DOCTYPE html>-->
+<!DOCTYPE html>
 <html>
-  <head>
-    <link href="./Resources/CSS/reset.css" type="text/css" rel="stylesheet">
-    <link href="./style.css" type="text/css" rel="stylesheet">
-    <title>Tortoiseshell Optics</title>
-  </head>
-  <body>
-  <!--banner/header-->
-    <header>
-      <div class='container'>
-        <div class='header-main'>
-          <div class='banner-top'>
-            <!--<img src='https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/logo-white.png'/-->
-            <span>Lance McFee</span>
-            </div>
-            <nav class='full'>
-              <ul>
-                <li>Contact</li>
-              </ul>
-            </nav>
-          <nav class='mobile-nav'>
-            <li>Menu</li>
-          </nav>
-          
+<head>
+  <title>Front End Web Developer | Kansas City</title>
+  <link rel="stylesheet" type="text/css" href="./reset.css">
+  <link rel="stylesheet" type="text/css" href="./Resources/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="./main.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="container" id="nav-fixed">
+      <div class="nav1">
+      </div>
+      <div class="nav2">
+        <div class="navleft">
+          <ul>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
         </div>
-        <div class='container'>
-        <div class='motto'>
-          <div class='motto-text'>
-            <h1>Creative Developer</h1>
-          </div>
-          </div>
+        <div class="navright">
+          <ul>
+            <li><a href="#contact">Info</a></li>
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
+    <div class="header1">
+      <div class="site-details">
+        <h1>LM</h1>
+        <h3>Web Developer</h3>
+        <p>Freelance</p>
+        <p>Front End</p>
+        <i class="fa-solid fa-turn-up"></i>
+      </div>
+      <div class="io">
+        <h1>i</h1>
+        <span><h1>/</h1></span>
+        <h1>o</h1>
+      </div>
+    </div>
+    <div class="header2">
+      <img src="" />
+    </div>
+  </header>
+
+  <div class="container supporting">
+    <div class="self-portrait">
+      <img src="./Resources/Images/Self-2024-1.jpg" />
+    </div>
+    <div class="statement">
+      <h1>“...passionate about web technologies.<span> i love working at the intersectionof creativity and technology to</span>  deliver quality web services <span>and support to entreprenuers</span>.”</h1>
+    </div>
+    <!-- href link opens the lightbox -->
+    <div id="resume">
+      <h2><img src="./Resources/Images/LM_resume_2023.jpg"  style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">View Resume</h2>
+    </div>
+    <!-- The Modal/Lightbox--->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
     
-    <!--main-->
-    <div class='icon-container'>
-      <div class='icons'>
-        <div class='paper'>
-        <img src='https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/paper-icon.png'/>
-          <p>Comprehensive </br>Exams</p>
+        <div class="mySlides">
+         
+          <img src="./Resources/Images/LM_resume_2023.jpg" style="width:100%">
         </div>
-        <div class='ruler'>
-        <img src='https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/ruler-icon.png'/>
-          <p>Custom </br>Fittings</p>
-        </div>
-        <div class='truck'>
-        <img src='https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/truck-icon.png'/>
-          <p>Fast </br>Delivery</p>
-        </div>
+    
+
+
+        
       </div>
+    </div>
+    <!-----------Contact Section--------------->
+    <div id="contact" class="rating">
+      <div class="title">
+        <h2>[ INFO ]</h2>
+      </div>
+    </div>
+  <div class="rating">
+    <div class="container details">
+      <p>Asking Salary</p>
+      <h2>$70k</h2>
+    </div>
+    <div class="container details">
+      <p>Location</p>
+      <h2>Kansas City</h2>
+    </div>
+    <div class="container details">
+      <p>Email</p>
+      <h2><a href=mailto:"nicklancemcfee@gmail.com”>Send Message</a></h2>
+    </div>
+  </div>
+  <div class="rating">
+    <div class="container details">
+      <p>Work Hours</p>
+      <h2>8am - 5pm</h2>
+    </div>
+    <div class="container details">
+      <p>Phone</p>
+      <h2>18165606259</h2>
+    </div>
+    <div class="container details">
+      <p>Social</p>
+      <h2><a href="https://www.linkedin.com/in/nicklancemcfee/" target =_blank>linkedin</a></h2>
+      <h2><a href="https://github.com/laedo1835" target =_blank>github</a></h2>
+      <h2><a href="https://www.behance.net/latticedwindow" target =_blank>behance</a></h2>
+      <h2><a href="https://dribbble.com/laedo" target =_blank>dribble</a></h2>
+    </div>
+  </div>
+
+  <section>
+    <div class="cases">
+      <h2>Projects</h2>
+     <div class="cases-top">
+        <div class="case" id="one">
+          <div class="description">
+            <h3>name</h3>
+              <h4>description</h4>
+          </div>
+        </div>
+        <div class="case" id="two">
+          <div class="description">
+           <h3>name</h3>
+            <h4>description</h4>
+          </div>
+        </div>
      </div>
-      <div class='container'>
-        <div class='information'>
-          <div class='info'>
-            <h2>PHILOSOPHY</h2>
-            <p>Over 75% of our brains are dedicated to one sense: vision. We believe everyone deserves to see the world, not matter what. That’s why we offer eye exams, custom fittings, and quick delivery at a low cost. It’s your vision that makes ours.</p>
-          </div>
-          <div class='info'>
-            <h2>APPOINTMENTS</h2>
-            <p>Schedule an appointment by calling us at (312) 654-0987. We’re open Tuesday - Saturday, 9AM - 6PM.</p>
-          </div>
+     <div class="cases-bottom">
+        <div class="case" id="three">
+          <div class="description">
+          <h3>name</h3>
+          <h4>description</h4>
         </div>
       </div>
-    
-    <!--footer-->
-    <footer>
-      <div class='container'>
-        <img src='https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/logo-black.png'/>
-        <h2>Copyright Tortoiseshell Optics</h2>
+      <div class="case" id="four">
+        <div class="description">
+          <h3>name</h3>
+            <h4>description</h4>
+        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+  <div class="container gallery" id="work">
+    <img src="./Resources/Images/Window-Variations-2.jpg" />
+    <img src="./Resources/Images/Window-Archery-1.jpg" />
+    <img src="./Resources/Images/Window-Variations-4-1.jpg" />
+    <div class="clearfix"></div>
+  </div>
+
+  <footer>
+    <div class="container bottom-container">
+      <div class="copyright">
+        <p>Developed by &copy; Lance McFee 2024</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li>Store</li>
+          <li>Hours</li>
+          <li>Wholesale</li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+
 </html>
