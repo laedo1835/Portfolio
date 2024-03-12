@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Front End Web Developer | Kansas City</title>
+  <link rel="stylesheet" type="text/css" href="./reset.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="./main.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="container" id="nav-fixed">
+      <div class="nav1">
+      </div>
+      <div class="nav2">
+        <div class="navleft">
+          <ul>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="navright">
+          <ul>
+            <li><a href="#contact">Info</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="header1">
+      <div class="site-details">
+        <h1>Resume</h1>
+  </header>
+
+  <div class="container supporting">
+    <div class="self-portrait">
+      <img src="./Resources/Images/Self-2024-1.jpg" />
+    </div>
+    <div class="statement">
+      <h1>“...passionate about web technologies.<span> i love working at the intersectionof creativity and technology to</span>  deliver quality web services <span>and support to entreprenuers</span>.”</h1>
+    </div>
+    <!-- href link opens the lightbox -->
+    <div id="resume">
+      <h2><img src="./Resources/Images/LM_resume_2023.jpg"  style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">View Resume</h2>
+    </div>
+    <!-- The Modal/Lightbox--->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+         
+          <img src="./Resources/Images/LM_resume_2023.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+    
+  <footer>
+    <div class="container bottom-container">
+      <div class="copyright">
+        <p>Developed by &copy; Lance McFee 2024</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li>Store</li>
+          <li>Hours</li>
+          <li>Wholesale</li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+
+</html>
