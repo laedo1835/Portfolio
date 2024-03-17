@@ -51,8 +51,11 @@ body, html {
   display: none;
 }
 
+
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -60,9 +63,11 @@ body, html {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: fixed;
+  }
   .topnav.responsive .icon {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
   }
