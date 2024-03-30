@@ -8,9 +8,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/Resources/style.css" type="text/css">
-<link rel="stylesheet" href="/Pages/piano-keys/style.css" type="text/css">
+<link rel="stylesheet" href="/Pages/Jelly-fish/style.css" type="text/css">
 <script src="../main.js"></script>
-<script defer src="./piano-keys/main.js"></script>
+<script defer src="./Jelly-fish/main.js"></script>
 </head>
 <body>
 
@@ -32,136 +32,32 @@
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PIANO PROJECT</span>
+    <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS</span>
   </div>
 </div>
 
-<!-- Piano Keys HTML -->
-<p class='title'>Piano Player</p>
-  <p id='demo'>Follow the song below to play  the piano.</p>
-  <section class="piano-container">
-  <section class="piano">
-    <section id='c-key' class="key" data-note="C">
-      <section class='keynote'>C</section>
+<!-- JellyFish HTML -->
+<div class="bg-black h-screen grid place-items-center text-white">
+    <section class="w-96 h-96 relative grid place-items-center">
+      <div class="rounded-full absolute w-full h-full border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[95%] h-[95%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[90%] h-[90%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[85%] h-[85%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[80%] h-[80%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[75%] h-[75%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[70%] h-[70%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[65%] h-[65%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[60%] h-[60%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[55%] h-[55%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[50%] h-[50%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[45%] h-[45%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[40%] h-[40%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[35%] h-[35%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[30%] h-[30%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[25%] h-[25%] border border-neutral-600"></div>
+      <div class="rounded-full absolute w-[20%] h-[20%] border border-neutral-600"></div>
     </section>
-    <section id='c-sharp-key' class="black-key" data-note="C#">
-      <section class='black-keynote'>C#</section>
-    </section>
-    <section id='d-key' class="key" data-note="D">
-      <section class='keynote'>D</section>
-    </section>
-    <section id='d-sharp-key' class="black-key" data-note="Db">
-      <section class='black-keynote'>D#</section>
-    </section>
-    <section id='e-key' class="key" data-note="E">
-      <section class='keynote'>E</section>
-    </section>
-    <section id='f-key' class="key" data-note="F">
-      <section class='keynote'>F</section>
-    </section>
-    <section id='f-sharp-key' class="black-key" data-note="F#">
-      <section class='black-keynote'>F#</section>
-    </section>
-    <section id='g-key' class="key" data-note="G">
-      <section class='keynote'>G</section>
-    </section>
-    <section id='g-sharp-key' class="black-key" data-note="Gb">
-      <section class='black-keynote'>G#</section>
-    </section>
-    <section id='a-key' class="key" data-note="A">
-      <section class='keynote'>A</section>
-    </section>
-    <section id='a-sharp-key' class="black-key" data-note="Ab">
-      <section class='black-keynote'>A#</section>
-    </section>
-    <section id='b-key' class="key" data-note="B">
-      <section class='keynote'>B</section>
-    </section>
-    <section id='high-c-key' class="key" data-note="C">
-      <div class='keynote'>C</div>
-    </section>
-  </section>
-</section>
-
-  <section class="lyrics-container">
-    <section id='lyrics'>
-      <section id='column-one'>
-        <section id="word-one">HAP-</section>
-        <section id="letter-note-one">G</section>
-      </section>
-      <section id='column-two'>
-        <section id="word-two">PY</section>
-        <section id="letter-note-two">G</section>
-      </section>
-      <section id='column-three'>
-        <section id="word-three">BIRTH-</section>
-        <section id="letter-note-three">A</section>
-      </section>
-      <section id='column-four'>
-        <section id="word-four">DAY</section>
-        <section id="letter-note-four">G</section>
-      </section>
-      <section id='column-five'>
-        <section id="word-five">TO</section>
-        <section id="letter-note-five">C</section>
-      </section>
-      <section id='column-six'>
-        <section id="word-six">YOU!</section>
-        <section id="letter-note-six">B</section>
-      </section>
-      <section id='column-optional' class='column-optional'>
-        <section id="word-optional">PYYY</section>
-        <section id="letter-note-optional">A</section>
-      </section>
-  
-      <audio id="A" src="'notes/A.mp3"></audio>
-      <audio id="Ab"src="'notes/Ab.mp3"></audio>
-      <audio id="B" src="'notes/B.mp3"></audio>
-      <audio id="Bb" src="'notes/Bb.mp3"></audio>
-      <audio id="C" src="'notes/C.mp3"></audio>
-      <audio id="D" src="'notes/D.mp3"></audio>
-      <audio id="Db" src="'notes/Db.mp3"></audio>
-      <audio id="E" src="'notes/E.mp3"></audio>
-      <audio id="Eb" src="'notes/Eb.mp3"></audio>
-      <audio id="F" src="'notes/F.mp3"></audio>
-      <audio id="G" src="'notes/G.mp3"></audio>
-      <audio id="Gb" src="'notes/Gb.mp3"></audio>
-  
-      <button id="first-next-line">PLAY</button>
-      <button id="second-next-line">PLAY G</button>
-      <button id="third-next-line">PLAY G</button>
-      <button id="fourth-next-line">PLAY A</button>
-      <button id="fifth-next-line">PLAY G</button>
-      <button id="sixth-next-line">PLAY C</button>
-      <button id="seventh-next-line">PLAY B</button>
-  
-      <button id="next-second-verse">Second Verse</button>
-      <button id="eighth-next-line">PLAY G</button>
-      <button id="ninth-next-line">PLAY G</button>
-      <button id="tenth-next-line">PLAY A</button>
-      <button id="eleventh-next-line">PLAY G</button>
-      <button id="twelvth-next-line">PLAY D</button>
-      <button id="thirteenth-next-line">PLAY C</button>
-  
-      <button id="next-third-verse">Third Verse</button>
-      <button id="fourteenth-next-line">PLAY G</button>
-      <button id="fifteenth-next-line">PLAY G</button>
-      <button id="sixteenth-next-line">PLAY G</button>
-      <button id="seventeenth-next-line">PLAY E</button>
-      <button id="eighteenth-next-line">PLAY C</button>
-      <button id="nineteenth-next-line">PLAY B</button>
-      <button id="twentieth-next-line">PLAY A</button>
-  
-      <button id="next-fourth-verse">Fourth Verse</button>
-      <button id="twentyfirst-next-line">PLAY F</button>
-      <button id="twentysecond-next-line">PLAY F</button>
-      <button id="twentythird-next-line">PLAY E</button>
-      <button id="twentyfourth-next-line">PLAY G</button>
-      <button id="twentyfifth-next-line">PLAY G</button>
-      <button id="twentysixth-next-line">PLAY C</button>
-      <button id="next-start-over">START OVER</button>
-    </section>
-  </section>>
+</div>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">

@@ -1,0 +1,3 @@
+git add disclaimer.txt
+git add instructions.txt
+git add warranty.txt
