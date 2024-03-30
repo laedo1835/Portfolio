@@ -27,8 +27,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
-
 .navleft a:-webkit-any-link {
   color: -webkit-link;
   cursor: pointer;
