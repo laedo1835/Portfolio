@@ -1,3 +1,42 @@
+const WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm']        //these variables allows you to play the keys from your keyboard
+const BLACK_KEYS = ['s', 'd', 'g', 'h', 'j']                  //the keys_sound need to be in the exact order as your keyboard. also, make sure to setup and event listener to play these - keydown
+
+const keys_sound = document.querySelectorAll('.key')
+const whiteKeys = document.querySelectorAll('.key.white')
+const blackKeys = document.querySelectorAll('.key.black')
+
+
+
+keys_sound.forEach(key => {
+  key.addEventListener('click', () => playNote(key))          //going to use playNote to create a function to pass the 'key' that we want to play
+})
+
+document.addEventListener('keydown', e => {
+  const key = e.key                                           //get the key you pressed
+  const whiteKeyIndex = WHITE_KEYS.indexOf(key)
+  const blackKeyIndex = BLACK_KEYS.indexOf(key)
+
+  if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex])      //important to keep the keys arrays in the correct order 
+  if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex])      //important to keep the keys arrays in the correct order 
+})
+
+function playNote(key) {
+  const noteAudio = document.getElementById(key.dataset.note) //this pulls the Audio element from piano.html based on the data note that we pressed
+  noteAudio.currentTime = 0                                   //this will start the note from the beginning with each click. otherwise you have to wait for the note to finish before you can play it again.
+  noteAudio.play()
+  key.classList.add('active')                                 // animates the color when clicked by calling the .white.active css selector.
+  noteAudio.addEventListener('ended', () => {
+    key.classList.remove('active')
+  })
+}
+
+
+//=============================My Piano JS==========================
+
+
+
+
+
 // The keys and notes variables store the piano keys
 const keys = ['c-key', 'd-key', 'e-key', 'f-key', 'g-key', 'a-key', 'b-key', 'high-c-key', 'c-sharp-key', 'd-sharp-key', 'f-sharp-key', 'g-sharp-key', 'a-sharp-key'];
 const notes = [];
@@ -10,33 +49,33 @@ keys.forEach(function(key){  //this .forEach method loops through the keys array
 
 //--------------------Event Handlers ------------------------
 // 1. & 2. 
-// First Named function that change the color of the keys at mousedown
+// First Named function that change the color of the keys at pointerdown
 const keyPlay = function(event) {
   event.target.style.backgroundColor = '#6df0c2'; //event.target returns the property that triggered the event
 }
 
-// Second Named function returns the background color of the keys to their default '' at mouseup
+// Second Named function returns the background color of the keys to their default '' at pointerup
 const keyReturn = function(event){
   event.target.style.backgroundColor  = '';
   
 }
 
 // 3. & 4.
-// Event Handler function used to assign color Keyplay (color change) mouse down events to the key notes. Uses 1 parameter "note."
+// Event Handler function used to assign color Keyplay (color change) pointer down events to the key notes. Uses 1 parameter "note."
 let eventAssignment = function(note) {
-  note.onmousedown = function() {
-    keyPlay(event);   //we need to assign this event handler the keyPlaytrigger to the function keyplay. We could use note.onmousedown = keyPlay; but we want to pass in a function that can trigger keyPlay. Use an anonymous function() here so we can essentially pass in another function has the handler for that specific note.
+  note.onpointerdown = function() {
+    keyPlay(event);   //we need to assign this event handler the keyPlaytrigger to the function keyplay. We could use note.onpointerdown = keyPlay; but we want to pass in a function that can trigger keyPlay. Use an anonymous function() here so we can essentially pass in another function has the handler for that specific note.
   } 
-  note.onmouseup = function() {
-    keyReturn(event); // 5. mouseup event. the function call is the only thing that we change for when the mouse is released.
+  note.onpointerup = function() {
+    keyReturn(event); // 5. pointerup event. the function call is the only thing that we change for when the pointer is released.
   }
 }
 
 
-//  6. this .forEach method loops through the keys array one at a time when clicked and passes the them through to the eventAssignment function for mouseup & mousedown event. 
+//  6. this .forEach method loops through the keys array one at a time when clicked and passes the them through to the eventAssignment function for pointerup & pointerdown event. 
 notes.forEach(eventAssignment); //pass the function definition, not the function call itself note.forEach(function(eventAssignemtn)) {};
 
-// 7. Test the code. When you mousedown on any key it will stay green until the mouseup event
+// 7. Test the code. When you pointerdown on any key it will stay green until the pointerup event
 
 // course code) Below in this Section, these variables store the buttons that progress the user through the lyrics. nextOne grabs the element by the ID of first-next-line, which grabs the nextTwo and so on.
 let nextOne = document.getElementById('first-next-line');
