@@ -402,7 +402,7 @@ HTML tags not found in W3 CSS page:     #img01  .caption    modal01
 
 
 #one {
-  background-image: url('./images/ecommerce.png');
+  background-image: url('images/ecommerce.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -415,7 +415,7 @@ HTML tags not found in W3 CSS page:     #img01  .caption    modal01
 }
 
 #two {
-  background-image: url('./images/Piano.png');
+  background-image: url('images/Piano.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -428,7 +428,7 @@ HTML tags not found in W3 CSS page:     #img01  .caption    modal01
 }
 
 #three {
-  background-image: url('./images/Codecademy.png');
+  background-image: url('images/Codecademy.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -441,7 +441,7 @@ HTML tags not found in W3 CSS page:     #img01  .caption    modal01
 }
 
 #four {
-  background-image: url('./images/Contentment.jpeg');
+  background-image: url('images/Contentment.jpeg');
   background-repeat: no-repeat;
   background-position: 65% 35%;
   background-size: cover;
@@ -455,7 +455,7 @@ HTML tags not found in W3 CSS page:     #img01  .caption    modal01
 }
 
 #five {
-  background-image: url('./images/LogoDesign.png');
+  background-image: url('images/LogoDesign.png');
   background-repeat: no-repeat;
   background-position: 40% 77%;
   background-size: cover;
@@ -468,7 +468,7 @@ HTML tags not found in W3 CSS page:     #img01  .caption    modal01
 }
 
 #six {
-  background-image: url('./images/Contentment.jpeg');
+  background-image: url('images/Contentment.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
