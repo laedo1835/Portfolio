@@ -34,9 +34,6 @@ function playNote(key) {
 //=============================My Piano JS==========================
 
 
-
-
-
 // The keys and notes variables store the piano keys
 const keys = ['c-key', 'd-key', 'e-key', 'f-key', 'g-key', 'a-key', 'b-key', 'high-c-key', 'c-sharp-key', 'd-sharp-key', 'f-sharp-key', 'g-sharp-key', 'a-sharp-key'];
 const notes = [];
@@ -49,33 +46,33 @@ keys.forEach(function(key){  //this .forEach method loops through the keys array
 
 //--------------------Event Handlers ------------------------
 // 1. & 2. 
-// First Named function that change the color of the keys at pointerdown
+// First Named function that change the color of the keys at mousedown
 const keyPlay = function(event) {
   event.target.style.backgroundColor = '#6df0c2'; //event.target returns the property that triggered the event
 }
 
-// Second Named function returns the background color of the keys to their default '' at pointerup
+// Second Named function returns the background color of the keys to their default '' at mouseup
 const keyReturn = function(event){
   event.target.style.backgroundColor  = '';
   
 }
 
 // 3. & 4.
-// Event Handler function used to assign color Keyplay (color change) pointer down events to the key notes. Uses 1 parameter "note."
+// Event Handler function used to assign color Keyplay (color change) mouse down events to the key notes. Uses 1 parameter "note."
 let eventAssignment = function(note) {
   note.onpointerdown = function() {
-    keyPlay(event);   //we need to assign this event handler the keyPlaytrigger to the function keyplay. We could use note.onpointerdown = keyPlay; but we want to pass in a function that can trigger keyPlay. Use an anonymous function() here so we can essentially pass in another function has the handler for that specific note.
+    keyPlay(event);   //we need to assign this event handler the keyPlaytrigger to the function keyplay. We could use note.onmousedown = keyPlay; but we want to pass in a function that can trigger keyPlay. Use an anonymous function() here so we can essentially pass in another function has the handler for that specific note.
   } 
   note.onpointerup = function() {
-    keyReturn(event); // 5. pointerup event. the function call is the only thing that we change for when the pointer is released.
+    keyReturn(event); // 5. mouseup event. the function call is the only thing that we change for when the mouse is released.
   }
 }
 
 
-//  6. this .forEach method loops through the keys array one at a time when clicked and passes the them through to the eventAssignment function for pointerup & pointerdown event. 
+//  6. this .forEach method loops through the keys array one at a time when clicked and passes the them through to the eventAssignment function for mouseup & mousedown event. 
 notes.forEach(eventAssignment); //pass the function definition, not the function call itself note.forEach(function(eventAssignemtn)) {};
 
-// 7. Test the code. When you pointerdown on any key it will stay green until the pointerup event
+// 7. Test the code. When you mousedown on any key it will stay green until the mouseup event
 
 // course code) Below in this Section, these variables store the buttons that progress the user through the lyrics. nextOne grabs the element by the ID of first-next-line, which grabs the nextTwo and so on.
 let nextOne = document.getElementById('first-next-line');
@@ -453,7 +450,7 @@ nextNineteen.onclick = function() {
   document.getElementById('letter-note-four').innerHTML = 'E';
   document.getElementById('word-five').innerHTML = 'DEAR';
   document.getElementById('letter-note-five').innerHTML = 'C';
-  document.getElementById('word-six').innerHTML = 'CHIP-';
+  document.getElementById('word-six').innerHTML = 'JEN-';
   document.getElementById('letter-note-six').innerHTML = 'B';
   document.getElementById('word-optional').innerHTML = '';
   document.getElementById('letter-note-optional').innerHTML = 'A';
@@ -473,9 +470,9 @@ nextTwenty.onclick = function() {
   document.getElementById('letter-note-four').innerHTML = 'E';
   document.getElementById('word-five').innerHTML = 'DEAR';
   document.getElementById('letter-note-five').innerHTML = 'C';
-  document.getElementById('word-six').innerHTML = 'CHIP-';
+  document.getElementById('word-six').innerHTML = 'JEN-';
   document.getElementById('letter-note-six').innerHTML = 'B';
-  document.getElementById('word-optional').innerHTML = 'PYYYY';
+  document.getElementById('word-optional').innerHTML = 'NYYYY';
   document.getElementById('letter-note-optional').innerHTML = 'A';
   lastLyric.style.display = 'inline-block';
 }
