@@ -3,11 +3,11 @@
 <head>
 <title>Web Developer | Lance McFee</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="Resources/style.css" type="text/css">
+<link rel="stylesheet" href="./Resources/style.css" type="text/css">
 <script src="./main.js"></script>
 </head>
 <body>  
@@ -95,9 +95,8 @@
   <p class="w3-center"><em>Here are some of my latest digital media projects.<br> More coming soon</em></p><br>
 
   <!-- MOdal Flexbox version -->
-  <section>
+  <section id="section">
     <div class="cases">
-      <h2>Projects</h2>
      <div class="cases-top">
         <div class="case w3-round" id="one">
           <div class="description w3-round w3-image w3-opacity w3-hover-opacity-off">
@@ -129,21 +128,41 @@
             <h4>Digital Design</h4></a>
         </div>
       </div>
-      <!--<div class="cases-top">
-        <div class="case" id="five" onclick="onClick(this)" >
-          <div class="description">
-            <h3>name</h3>
-              <h4>description</h4>
-          </div>
-        </div>
-        <div class="case" id="six"onclick="onClick(this)" >
-          <img src="./Resources/Images/Contentment.jpeg" style="width:100%; display: none;" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-          <div class="description">
-           <h3>name</h3>
-            <h4>description</h4>
-          </div>
-        </div>-->
      </div>
+    </div>
+  </section>
+  <section id="section2">
+    <div class="team">
+      <div class="member" id="holmes">
+        <div class="description">
+          <h3>Megan Holmes</h3>
+          <h4>CEO</h4>
+        </div>
+      </div>
+      <div class="member" id="baker">
+        <div class="description">
+          <h3>Louise Baker</h3>
+          <h4>Art Director</h4>
+        </div>
+      </div>
+      <div class="member" id="cox">
+        <div class="description">
+          <h3>Matthew Cox</h3>
+          <h4>Lead Designer</h4>
+        </div>
+      </div>
+      <div class="member" id="benson">
+        <div class="description">
+          <h3>Alice Benson</h3>
+          <h4>Lead Designer</h4>
+        </div>
+      </div>
+      <div class="member" id="shore">
+        <div class="description">
+          <h3>Jackie Shore</h3>
+          <h4>Lead Web Developer</h4>
+        </div>
+      </div>
     </div>
   </section>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width)
