@@ -3,6 +3,7 @@ body{
   padding: 0;
   font-family: sans-serif;
   background: #fff;
+  touch-action: manipulation;
 }
 
 
@@ -52,6 +53,11 @@ body{
 
 .black.active {
   background-color: #6df0c2;
+}
+
+.w3-black {
+  color: #fff !important;
+  background-color: #000 !important;
 }
 
 /**============================My Piano Styles===========================**/
