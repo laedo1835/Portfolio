@@ -197,7 +197,7 @@ element.style {
     flex-direction: column;
   }
   #one {
-    background-image: url('./Resources/images/ecommerce.png');
+    background-image: url('./Images/ecommerce.png');
     background-repeat: no-repeat;
     background-position: 40% 77%;
     background-size: cover;
@@ -210,7 +210,7 @@ element.style {
     margin: 5px;
   }
   #two {
-    background-image: url('./Resources/images/Piano.png');
+    background-image: url('./Images/Piano.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -222,7 +222,7 @@ element.style {
     margin: 5px;
   }
   #three {
-    background-image: url('./Resources/images/Codecademy.png');
+    background-image: url('./Images/Codecademy.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -234,7 +234,7 @@ element.style {
     margin: 5px;
   }
   #four {
-    background-image: url('./Resources/images/Contentment.jpeg');
+    background-image: url('./Images/Contentment.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
