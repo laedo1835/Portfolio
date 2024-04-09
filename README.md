@@ -1,4 +1,4 @@
-# Portfolio
+# My Dev Portfolio
  static HTML site used for showcasing Front End Web Development & Design projects
 
 # Developer's Contact
