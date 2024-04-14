@@ -11,7 +11,7 @@ body, html {
 }
 
 .w3-opacity, .w3-hover-opacity:hover {
-  opacity: 0.90;
+  opacity: 1;
 }
 
 /**=========== Nav Menu =============*/
@@ -77,29 +77,36 @@ input.btn-block[type="submit"], input.btn-block[type="reset"], input.btn-block[t
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.bgimg-1 {
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('./Images/SiteImages-1.jpg');
+  background-image: url('./Images/still-life-3.jpg');
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url('./Images/SiteImages-2.jpg');
-  min-height: 400px;
+  background-image: url('./Images/still-life-4.jpg');
+  min-height: 100%;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("./Images/SiteImages-3.jpg");
-  min-height: 400px;
+  background-image: url("./Images/still-life-2.jpg");
+  min-height: 100%;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -124,7 +131,7 @@ element.style {
 }
 
 .w3-opacity-min {
-  opacity: 0.90;
+  opacity: 1;
 }
 
 /** Footer */
@@ -151,10 +158,25 @@ element.style {
 
 /*Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-width: 480px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  /*.bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
-  }
+  }*/
+
+  .bgimg-1, .bgimg-2 {
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
   .w3-content,.w3-auto{
     margin-left:auto;
     margin-right:auto
@@ -612,6 +634,8 @@ color: #fff;
 .w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:#ccc;color:#000}
 .w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
 .w3-bar .w3-button{white-space:normal}
+.w3-animate-opacity{animation:opac 6s}
+.w3-round,.w3-round-medium{border-radius:15px}
 
 /*==== FlexBox Second Grid - CSS Storage:
 ========================================
