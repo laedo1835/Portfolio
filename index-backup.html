@@ -13,10 +13,11 @@
 <body>  
 <!-- Navbar (sit on top) -->
 <div class="topnav" id="myTopnav">
-  <a href="../index.html" class="">HOME</a>
-  <a href="./Pages/portfolio.html" class="">PORTFOLIO</a>
-  <a href="./Pages/info.html" class="">INFO</a>
-  <a href="./Pages/contact.html" class="">CONTACT</a>
+    <a href="./index.html" class="">HOME</a>
+    <a href="./Pages/info.html" class="" >ABOUT</a>
+    <a href="./Pages/portfolio.html" class="">PORTFOLIO</a>
+    <a href="./Pages/resume.html" class="">CONTACT</a>
+    <a href="#" class="">SEARCH</a>
     <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
       <i class="fa fa-bars"></i>
     </a>
@@ -28,11 +29,70 @@
     <span class="w3-center w3-xlarge w3-wide w3-animate-opacity logo"><span><img src="/Resources/Images/LM-Logo-2-mark-white.png" class="w3-image w3-opacity w3-hover-opacity-off" alt="Logo">
   </div>
 </div>
-  
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Work Statement</h3>
+  <!--<p class="w3-center"><em>Work Statement</em></p>-->
+  <p>I am a photographer and web designer in Kansas City. My area of focus resides in the architecture industry. My services are currenlty in the portfolio building phase which means I am open to trading photos for property access.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Lance McFee</b></p><br>
+      <img src="/Resources/Images/self-portrait.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Hi, I'm Lance and Welcome to my portfolio homepage. The projects displayed consist of front end web design as well as my photography projects.</p>
+      <p>You can view my Git hub and LinkedIn below. If you would like to be notified when new projects are posted feel free to subscribe to my personal lancemcfee.io news letter.</p>
+      <p>Cheers!</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Development</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <a href="https://www.behance.net/latticedwindow" target="_blank"><div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    BEhance Projects
+  </div></a>
+  <a href="https://github.com/laedo1835" target="_blank"><div class="w3-quarter w3-section">
+    <span class="w3-xlarge">20+</span><br>
+    Git Hub Repositories
+  </div></a>
+  <a href="https://www.linkedin.com/in/nicklancemcfee/details/certifications/" target="_blank"><div class="w3-quarter w3-section">
+    <span class="w3-xlarge">5+</span><br>
+    Certificates
+  </div></a>
+  <a href="https://www.codecademy.com/profiles/latticed_window" target="_blank"><div class="w3-quarter w3-section">
+    <span class="w3-xlarge">45%</span><br>
+    Codecademy
+  </div></a>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">{DIGITAL MEDIA}</span>
+  </div>
+</div>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-portfolio w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest digital media projects.<br> More coming soon</em></p><br>
 
   <!-- MOdal Flexbox version -->
   <section id="section">
@@ -40,38 +100,38 @@
      <div class="cases-top">
         <div class="case w3-round" id="one">
           <div class="description w3-round w3-image w3-opacity w3-hover-opacity-off">
-            <a href="/Pages/architecture.html" target="_blank">
-            <h3>photography</h3>
-              <h4>Architecture</h4></a>
+            <a href="https://github.com/laedo1835/Portfolio" target="_blank">
+              <h3>websites</h3>
+                <h4>On Github</h4></a>
           </div>
         </div>
         <div class="case w3-round" id="two">
           <div class="description w3-round w3-image w3-opacity w3-hover-opacity-off">
-            <a href="/Pages/realestate.html"> 
-              <h3>photography</h3>
-                <h4>Real Estate</h4>
+            <a href="Pages/piano.html"> 
+              <h3>DEVELOPMENT</h3>
+                <h4>Javascript</h4>
           </div></a>
         </div>
      </div>
      <div class="cases-bottom">
         <div class="case w3-round" id="three">
           <div class="description w3-round w3-image w3-opacity w3-hover-opacity-off">
-            <a href="https://lancemcfee.com/portfolio-gallery/" target="_blank"> 
-            <h3>photography</h3>
-              <h4>Black & White</h4>
-        </div></a>
-      </div>
+            <a href="https://www.linkedin.com/in/nicklancemcfee/details/certifications/" target="_blank"> 
+            <h3>linkedIn</h3>
+              <h4>Certificates</h4>
+          </div></a>
+        </div>
       <div class="case w3-round" id="four" >
         <div class="description w3-round w3-image w3-opacity w3-hover-opacity-off">
-          <a href="https://laedo.io/digital-art" target="_blank">
+          <a href="https://latticedwindow.com/digital-art" target="_blank">
           <h3>photoshop</h3>
             <h4>Digital Design</h4></a>
         </div>
       </div>
      </div>
      <div id="load-more">
-      <a href="./contact.html" target="_blank">
-      <button class="w3-button w3-padding-large w3-light-grey">CONTACT</button></a>
+      <a href="https://github.com/laedo1835" target="_blank">
+      <button class="w3-button w3-padding-large w3-light-grey">LOAD MORE</button></a>
     </div>
     </div>
   </section>
@@ -131,7 +191,8 @@
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">Where I Work</h3>
+  <h3 class="w3-center">Resume</h3>
+  <p class="w3-center"><em>Message me to request a copy</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
@@ -143,7 +204,7 @@
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +8165606259<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: nicklancemcfee@gmail.com<br>
       </div>
-      <p>Send Me A Message</p>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
       
       <!-----<form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
@@ -189,6 +250,10 @@
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
+    <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>-->
     <div class="social-footer">
       <div class="social-icon">
       <a href="https://www.behance.net/latticedwindow" target="_blank"><i class="fa fa-brands fa-behance w3-hover-opacity"></i></a>
@@ -197,7 +262,7 @@
       <a href="https://github.com/laedo1835 " target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
       </div>
       <div class="social-icon">
-      <a href="https://www.instagram.com/lae.do" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://github.com/laedo1835 " target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
       </div>
     </div>
   </div>

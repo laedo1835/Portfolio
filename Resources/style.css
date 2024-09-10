@@ -14,6 +14,11 @@ body, html {
   opacity: 1;
 }
 
+.about p {
+  max-width: 300px;
+  float: left;
+}
+
 /**=========== Nav Menu =============*/
 /* Style the navigation menu */
 .nav-main {
@@ -28,7 +33,7 @@ body, html {
 
 .topnav {
   overflow: hidden;
-  background-color: #000;
+  background-color: #fff;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -38,7 +43,7 @@ body, html {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -93,13 +98,19 @@ input.btn-block[type="submit"], input.btn-block[type="reset"], input.btn-block[t
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('./Images/still-life-3.jpg');
+  background-image: url('./Images/Zahner-1.jpg');
   min-height: 100%;
+}
+
+.logo img{
+  background-color:#000!important;
+  width: 240px!important;
+  height: 150px!important;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url('./Images/still-life-4.jpg');
+  background-image: url('./Images/green-texture.jpg');
   min-height: 100%;
 }
 
@@ -196,7 +207,7 @@ element.style {
     display: inline-flex;
     align-items: stretch;
     height: 800px;
-    width: 100%;
+    width: 1000px;
     margin: 0px auto;
   }
   .cases h2 {
@@ -298,7 +309,7 @@ element.style {
     align-items: center;
     justify-content: center;
     margin: 10px auto;
-    min-height: 200px;
+    min-height: 100px;
   }
   /*** Second Modal FlexBox Photography Site CSS - Delete the unnecessary code you don't need for the second grid ****/
   /* 3. Structure Styles
@@ -452,7 +463,7 @@ element.style {
 .cases {
   display: flex;
   height: 800px;
-  width: 100%;
+  width: 1000px;
   flex-direction: column;
   align-items: stretch;
   margin: 0px auto;
@@ -476,7 +487,7 @@ element.style {
 
 
 #one {
-  background-image: url('./Images/ecommerce.png');
+  background-image: url('./Images/FederalBuilding-10-HDR.jpg');
   background-repeat: no-repeat;
   background-position: 40% 77%;
   background-size: cover;
@@ -489,7 +500,7 @@ element.style {
 }
 
 #two {
-  background-image: url('./Images/Piano.png');
+  background-image: url('./Images/Home-7.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -502,7 +513,7 @@ element.style {
 }
 
 #three {
-  background-image: url('./Images/Codecademy.png');
+  background-image: url('./Images/ecommerce.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -620,7 +631,7 @@ color: #fff;
   align-items: center;
   justify-content: center;
   margin: 10px auto;
-  min-height: 200px;
+  min-height: 100px;
 }
 
 .w3-rest{overflow:hidden}.w3-stretch{margin-left:-16px;margin-right:-16px}
@@ -634,7 +645,7 @@ color: #fff;
 .w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:#ccc;color:#000}
 .w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
 .w3-bar .w3-button{white-space:normal}
-.w3-animate-opacity{animation:opac 6s}
+.w3-animate-opacity{animation:opac 2.5s}
 .w3-round,.w3-round-medium{border-radius:15px}
 
 /*==== FlexBox Second Grid - CSS Storage:
